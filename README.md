@@ -83,7 +83,7 @@ Technologies Used
 Author
 ------
 
--   [Richard Chance]
+-   Richard Chance
 
 License
 -------
