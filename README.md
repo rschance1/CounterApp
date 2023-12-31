@@ -12,7 +12,7 @@ Features
 -   Increments and decrements a counter.
 -   Uses MobX for efficient state management.
 -   Implements MVVM architecture for clear separation of concerns.
--   Simple UI with increment and decrement buttons and a counter view.
+-   Simple UI with increment and decrement buttons and a counter view with a header and a footer.
 
 Getting Started
 ---------------
@@ -43,6 +43,16 @@ Getting Started
     bashCopy code
 
     `yarn`
+    
+    mobx library
+
+    `npm install --save mobx`
+
+    or if you're using yarn:
+
+    mobx library
+
+    `yarn add mobx`
 
 3.  Run the app:
 
@@ -63,7 +73,7 @@ Project Structure
 
 -   `src/models/`: Contains the data model of the application.
 -   `src/viewModels/`: Contains the ViewModel layer, which serves as an intermediary between the model and the view.
--   `src/views/`: Contains the UI components of the application, including the main counter view.
+-   `src/views/`: Contains the UI components of the application, including the main counter view, header and footer.
 -   `src/assets/`: Contains static assets such as images.
 
 Key Components
