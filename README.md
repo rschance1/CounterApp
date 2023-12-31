@@ -63,7 +63,7 @@ Project Structure
 
 -   `src/models/`: Contains the data model of the application.
 -   `src/viewModels/`: Contains the ViewModel layer, which serves as an intermediary between the model and the view.
--   `src/views/`: Contains the UI components of the application, including the main counter view, header, and footer.
+-   `src/views/`: Contains the UI components of the application, including the main counter view.
 -   `src/assets/`: Contains static assets such as images.
 
 Key Components
