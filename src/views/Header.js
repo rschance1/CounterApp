@@ -1,21 +1,28 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
+import { observer } from 'mobx-react';
+import HeaderViewModel from '../viewModels/HeaderViewModel';
 
-const Header = () => (
+const viewModel = new HeaderViewModel();
+
+const Header = observer(() => (
   <View style={styles.header}>
-    <Text style={styles.title}>Counter App</Text>
+    <Text style={styles.text}>{viewModel.text}</Text>
   </View>
-);
+));
 
 const styles = StyleSheet.create({
   header: {
     height: 60,
     padding: 15,
     backgroundColor: 'darkslateblue',
-  },
-  title: {
-    color: '#fff',
+    color: '#ffffff',
     fontSize: 23,
+    position: 'center',
+  },
+  text: {
+    color: '#fff',
+    fontSize: 20,
     textAlign: 'center',
   },
 });
