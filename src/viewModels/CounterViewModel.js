@@ -13,11 +13,11 @@ class CounterViewModel {
   }
 
   increment() {
-    this.counter.increment();
+    this.counter.count += 1;
   }
 
   decrement() {
-    this.counter.decrement();
+    this.counter.count -= 1;
   }
 }
 
