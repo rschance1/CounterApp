@@ -6,6 +6,10 @@ class Counter {
   constructor() {
     makeAutoObservable(this);
   }
+
+  setCount(newCount) {
+    this.count = newCount;
+  }
 }
 
 export default Counter;

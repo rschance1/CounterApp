@@ -12,12 +12,12 @@ class CounterViewModel {
     return this.counter.count;
   }
 
-  increment() {
-    this.counter.count += 1;
+  onIncrement() {
+    this.counter.setCount(this.counter.count +=1);
   }
 
-  decrement() {
-    this.counter.count -= 1;
+  onDecrement() {
+    this.counter.setCount(this.counter.count -= 1);
   }
 }
 
